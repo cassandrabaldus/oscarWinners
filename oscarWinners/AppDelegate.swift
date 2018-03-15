@@ -7,15 +7,22 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "Rasq9QH2QNaMxvsPG47QZtERiHNfEBtO7BmzI6dP"
+            $0.clientKey = "TrXR9KCJAYyRej9joZQCt1jt7z9cvrTep8sWNFmC"
+            $0.server = "https://parseapi.back4app.com"
+        }
+        Parse.initialize(with: configuration)
+        Movie.registerSubclass()
         return true
     }
 

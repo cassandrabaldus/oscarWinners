@@ -12,6 +12,13 @@
 		AF35B042205AECFE000534D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF35B040205AECFE000534D3 /* Main.storyboard */; };
 		AF35B044205AECFE000534D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF35B043205AECFE000534D3 /* Assets.xcassets */; };
 		AF35B047205AECFE000534D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF35B045205AECFE000534D3 /* LaunchScreen.storyboard */; };
+		AF35B04F205AED46000534D3 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF35B04E205AED46000534D3 /* Bolts.framework */; };
+		AF35B051205AED56000534D3 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF35B050205AED56000534D3 /* Parse.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		AF35B054205AEDE7000534D3 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AF35B053205AEDE7000534D3 /* libstdc++.6.tbd */; };
+		AF35B056205AEDFC000534D3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AF35B055205AEDFC000534D3 /* libsqlite3.tbd */; };
+		AF35B058205AEE07000534D3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF35B057205AEE07000534D3 /* SystemConfiguration.framework */; };
+		AF35B05A205AEE12000534D3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF35B059205AEE12000534D3 /* AudioToolbox.framework */; };
+		AF35B05C205AF3ED000534D3 /* dbObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35B05B205AF3ED000534D3 /* dbObjects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		AF35B043205AECFE000534D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF35B046205AECFE000534D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF35B048205AECFE000534D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF35B04E205AED46000534D3 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		AF35B050205AED56000534D3 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		AF35B053205AEDE7000534D3 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		AF35B055205AEDFC000534D3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		AF35B057205AEE07000534D3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AF35B059205AEE12000534D3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AF35B05B205AF3ED000534D3 /* dbObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dbObjects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF35B05A205AEE12000534D3 /* AudioToolbox.framework in Frameworks */,
+				AF35B058205AEE07000534D3 /* SystemConfiguration.framework in Frameworks */,
+				AF35B056205AEDFC000534D3 /* libsqlite3.tbd in Frameworks */,
+				AF35B054205AEDE7000534D3 /* libstdc++.6.tbd in Frameworks */,
+				AF35B051205AED56000534D3 /* Parse.framework in Frameworks */,
+				AF35B04F205AED46000534D3 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +60,9 @@
 			children = (
 				AF35B03B205AECFE000534D3 /* oscarWinners */,
 				AF35B03A205AECFE000534D3 /* Products */,
+				AF35B050205AED56000534D3 /* Parse.framework */,
+				AF35B04E205AED46000534D3 /* Bolts.framework */,
+				AF35B052205AEDE7000534D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +80,23 @@
 				AF35B03C205AECFE000534D3 /* AppDelegate.swift */,
 				AF35B03E205AECFE000534D3 /* ViewController.swift */,
 				AF35B040205AECFE000534D3 /* Main.storyboard */,
+				AF35B05B205AF3ED000534D3 /* dbObjects.swift */,
 				AF35B043205AECFE000534D3 /* Assets.xcassets */,
 				AF35B045205AECFE000534D3 /* LaunchScreen.storyboard */,
 				AF35B048205AECFE000534D3 /* Info.plist */,
 			);
 			path = oscarWinners;
+			sourceTree = "<group>";
+		};
+		AF35B052205AEDE7000534D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF35B059205AEE12000534D3 /* AudioToolbox.framework */,
+				AF35B057205AEE07000534D3 /* SystemConfiguration.framework */,
+				AF35B055205AEDFC000534D3 /* libsqlite3.tbd */,
+				AF35B053205AEDE7000534D3 /* libstdc++.6.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF35B05C205AF3ED000534D3 /* dbObjects.swift in Sources */,
 				AF35B03F205AECFE000534D3 /* ViewController.swift in Sources */,
 				AF35B03D205AECFE000534D3 /* AppDelegate.swift in Sources */,
 			);
@@ -275,6 +311,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = oscarWinners/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.nwmissouri.oscarWinners;
@@ -289,6 +329,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = oscarWinners/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.nwmissouri.oscarWinners;
